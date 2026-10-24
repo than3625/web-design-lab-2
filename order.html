@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng | JWW Store</title>
+</head>
+<body bgcolor="#dcd3ff">
+    <header>
+        <table bgcolor="#8f60bf" border="0" cellpadding="15" cellspacing="0" width="100%">
+            <tr>
+                <td align="center" width="100%">
+                    <font color="#FFFFFF" size="7"><b>JWW Store</b></font><br>
+                    <font color="#FCD584" size="5">Nâng tầm trải nghiệm, kết nối đam mê 🎮</font>
+                </td>
+            </tr>
+        </table>
+        <table bgcolor="#fff5ba" border="0" cellpadding="12" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                    <nav aria-label="Main navigation">
+                        <a href="index.html">Trang Chủ </a>|
+                        <a href="index.html#products">Sản Phẩm </a>|
+                        <a href="detail.html">Chi Tiết </a>|
+                        <a href="price.html">Bảng Giá </a>|
+                        <a href="order.html">Đặt Hàng </a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <table width="100%" cellpadding="15" cellspacing="8" border="0">
+            <tr>
+                <td bgcolor="#FFFFFF" valign="top" width="65%">
+                    <h1 align="center">FORM ĐẶT HÀNG</h1>
+                    <form action="confirm.html" method="get">
+                        <fieldset>
+                            <legend>Thông tin người đặt</legend>
+                            <p>
+                                <label for="fullname">Họ và tên*</label><br>
+                                <input autocomplete="fullname" id="fullname" maxlength="60" minlength="2" name="fullname" placeholder="Nguyen Van A" 
+                                        required="" type="text"><br>
+                            </p>
+                            <p>
+                                <label for="email">Email*</label><br>
+                                <input autocomplete="email" id="email" name="email" placeholder="example@gmail.com" required="" type="email"><br>
+                            </p>
+                            <p>
+                                <label for="phone">Số điện thoại*</label><br>
+                                <input autocomplete="phone" id="phone" name="phone" placeholder="0909080807" type="tel"><br>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Chi tiết sản phẩm</legend>
+                            <p>
+                                <label for="product">Chọn sản phẩm: </label>
+                                <select id="product" name="product" required="">
+                                    <option value="">--Vui lòng chọn sản phẩm--</option>
+                                    <option value="G001">G001 - Nintendo Switch 2 (13,990,000đ)</option>
+                                    <option value="G002">G002 - PES EFOOTBALL KICK-OFF! (699,000đ)</option>
+                                    <option value="G003">G003 - PlayStation 5 (16,990,000đ)</option>
+                                    <option value="G004">G004 - Animal Crossing: New Horizons (599,000đ)</option>
+                                    <option value="G005">G005 - FIFA 26 (1,599,000đ)</option>
+                                    <option value="G006">G006 - It Takes Two (980,000đ)</option>
+                                    <option value="G007">G007 - FIFA 27 (1,599,000đ)</option>
+                                    <option value="G008">G008 - Minecraft (799,000đ)</option>
+                                    <option value="G009">G009 - Grand Theft Auto V (899,000đ)</option>
+                                    <option value="G010">G010 - PlayStation 4 Slim 1TB (6,099,000đ)</option>
+                                    <option value="G011">G011 - Nintendo Switch OLED (9,000,000đ)</option>
+                                    <option value="G012">G012 - Nintendo Switch Lite (5,000,000đ)</option>
+                                </select>
+                                <p>
+                                    <label for="quantity">Số lượng (1-5):</label>
+                                    <input id="quantity" name="quantity" max="5" min="1" step="1" required="" type="number" value="1">
+                                </p>
+                            </p>
+                            <fieldset>
+                                <legend>Hình thức nhận hàng:</legend>
+                                <label>
+                                    <input name="ship" required="" type="radio" value="store-pickup">Nhận tại cửa hàng</label><br>
+                                </label>
+                                <label>
+                                    <input name="ship" required="" type="radio" value="home-delivery">Giao tận nơi<br>
+                                </label>
+                            </fieldset>
+                            <p>
+                                <label for="note">Ghi chú:</label><br>
+                                <textarea cols="40" id="note" name="note" placeholder="Ghi chú đơn hàng (không bắt buộc)" rows="4"></textarea>
+                            </p>
+                        </fieldset>
+                        <p>
+                            <label>
+                                <input name="yes" required="" type="checkbox" value="yes">Tôi đồng ý với các điều khoản và chính sách mua hàng của cửa hàng
+                            </label>
+                        </p>
+                        <button type="submit">Đặt hàng</button>
+                        <button type="reset">Reset</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <br>
+    <footer>
+        <table bgcolor="#eed3b6" border="0" cellpadding="16" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                <a href="index.html">Quay lại trang chủ</a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <p>&copy; 2026 JWW Store</font></p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
